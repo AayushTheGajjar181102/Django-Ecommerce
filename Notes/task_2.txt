@@ -1,0 +1,20 @@
+Product Search
+
+Product_SideBar_Filter
+
+BlinkDealApp :
+
+Review Table
+id
+product Foreign
+user Foreign
+date today
+details
+rating int (1 to 5)
+
+
+Feedback in BlinkDealApp.
+
+MyOrders
+Chatbot
+Razorpay

@@ -1,0 +1,144 @@
+<!-- Start Shoes Categories -->
+<div class="tab-pane fade in active" id="Shoes">
+    <ul class="aa-product-catg">
+      <!-- start single product item -->
+      {% for product in products %}
+        {% if product.category.category_name == "Shoes" %}
+          <li>
+            <figure>
+              <a class="aa-product-img" href="{% url 'product_detail' product.id %}"><img src="/media/{{product.product_image}}" alt="polo shirt img" width="100%" height="100%"></a>
+
+              <div class="aa-product-hvr-content">
+                <a href="{% url 'wishlist_process' product.id %}" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+              </div>
+
+              <a class="aa-add-card-btn" href="{% url 'cart_process' product.id %}"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+
+              <figcaption>
+                <h4 class="aa-product-title"><a href="{% url 'product_detail' product.id %}">{{product.product_name}}</a></h4>
+                <span class="aa-product-price">RS. {{product.product_price}}</span>
+              </figcaption>
+            </figure>                         
+            <!-- product badge -->
+          </li>
+          
+        {% endif %}
+      {% endfor %}
+  </div>
+  <!-- / End Shoes Categories -->
+
+  <!-- Start Mobiles Categories -->
+  <div class="tab-pane fade" id="Mobiles">
+    <ul class="aa-product-catg">
+      <!-- start single product item -->
+      {% for product in products %}
+        {% if product.category.category_name == "Mobiles" %}
+          <li>
+            <figure>
+              <a class="aa-product-img" href="{% url 'product_detail' product.id %}"><img src="/media/{{product.product_image}}" alt="polo shirt img" width="100%" height="100%"></a>
+
+              <div class="aa-product-hvr-content">
+                <a href="{% url 'wishlist_process' product.id %}" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+              </div>
+
+              <a class="aa-add-card-btn" href="{% url 'cart_process' product.id %}"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+
+              <figcaption>
+                <h4 class="aa-product-title"><a href="{% url 'product_detail' product.id %}">{{product.product_name}}</a></h4>
+                <span class="aa-product-price">RS. {{product.product_price}}</span>
+              </figcaption>
+            </figure>                         
+          <!-- product badge -->
+          </li>
+        {% endif %}
+      {% endfor %}
+  </div>
+  <!-- / End Mobiles Categories -->
+
+  <!-- Start Shirts Categories -->
+  <div class="tab-pane fade" id="Shirts">
+    <ul class="aa-product-catg">
+      <!-- start single product item -->
+      {% for product in products %}
+        {% if product.category.category_name == "Shirts" %}
+          <li>
+            <figure>
+
+              <a class="aa-product-img" href="{% url 'product_detail' product.id %}"><img src="/media/{{product.product_image}}" alt="polo shirt img" width="100%" height="100%"></a>
+
+              <div class="aa-product-hvr-content">
+                <a href="{% url 'wishlist_process' product.id %}" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+              </div>
+
+              <a class="aa-add-card-btn" href="{% url 'cart_process' product.id %}"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+
+              <figcaption>
+                <h4 class="aa-product-title"><a href="{% url 'product_detail' product.id %}">{{product.product_name}}</a></h4>
+                <span class="aa-product-price">RS. {{product.product_price}}</span>
+              </figcaption>
+            </figure>                         
+            <!-- product badge -->
+          </li>
+        {% endif %}
+      {% endfor %}
+  </div>
+  <!-- / End Shirts Categories -->
+  
+  <!-- Start T-Shirts Categories -->
+  <div class="tab-pane fade" id="T-Shirts">
+    <ul class="aa-product-catg">
+      <!-- start single product item -->
+      {% for product in products %}
+        {% if product.category.category_name == "T-Shirts" %}
+          <li>
+            <figure>
+
+              <a class="aa-product-img" href="{% url 'product_detail' product.id %}"><img src="/media/{{product.product_image}}" alt="polo shirt img" width="100%" height="100%"></a>
+              
+              <div class="aa-product-hvr-content">
+                <a href="{% url 'wishlist_process' product.id %}" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+              </div>
+
+              <a class="aa-add-card-btn" href="{% url 'cart_process' product.id %}"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+              
+              <figcaption>
+                <h4 class="aa-product-title"><a href="{% url 'product_detail' product.id %}">{{product.product_name}}</a></h4>
+                <span class="aa-product-price">RS. {{product.product_price}}</span>
+              </figcaption>
+            </figure>                         
+            <!-- product badge -->
+          </li>
+        {% endif %}
+      {% endfor %}
+  </div>
+  <!-- / End T-Shirts Categories -->
+
+  <!-- Start Jeans Categories -->
+  <div class="tab-pane fade" id="Jeans">
+    <ul class="aa-product-catg">
+      <!-- start single product item -->
+      {% for product in products %}
+        {% if product.category.category_name == "Jeans" %}
+          <li>
+            <figure>
+
+              <a class="aa-product-img" href="{% url 'product_detail' product.id %}"><img src="/media/{{product.product_image}}" alt="polo shirt img" width="100%" height="100%"></a>
+              
+              <div class="aa-product-hvr-content">
+                <a href="{% url 'wishlist_process' product.id %}" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
+              </div>
+              
+              <a class="aa-add-card-btn" href="{% url 'cart_process' product.id %}"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+              
+              <figcaption>
+                <h4 class="aa-product-title"><a href="{% url 'product_detail' product.id %}">{{product.product_name}}</a></h4>
+                <span class="aa-product-price">RS. {{product.product_price}}</span>
+              </figcaption>
+            </figure>                         
+            <!-- product badge -->
+          </li>
+        {% endif %}
+      {% endfor %}
+  </div>
+  <!-- / End Jeans Categories -->
+</div>

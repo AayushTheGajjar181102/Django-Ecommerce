@@ -1,0 +1,81 @@
+<!-- main content start-->
+		<div id="page-wrapper">
+
+			<div class="main-page signup-page">
+
+				<h2 class="title1">Signup</h2>
+
+				<div class="sign-up-row widget-shadow">
+					<h5>Personal Information :</h5>
+					
+				<form action="#" method="post">
+
+					{% csrf_token %}
+
+					<div class="sign-u">
+						<input type="text" name="user_name" placeholder="User Name" required="">
+						<div class="clearfix"> </div>
+					</div>
+
+					<div class="sign-u">
+						<input type="email" placeholder="Email Address" name = "user_email" required="">
+						<div class="clearfix"> </div>
+					</div>
+
+					<div class="sign-u">
+						<input type="password" placeholder="Password" name = "user_password" required="">
+						<div class="clearfix"> </div>
+					</div>
+
+					<div class="sign-u">
+
+						<div class="sign-up1">
+							<h4>Gender :</h4>
+						</div>
+
+						<div class="sign-up2">
+							<label>
+								<input style="margin-left: -4rem;" type="radio" name="user_gender" value="Male" required="">
+								Male
+							</label>
+
+							<label>
+								<input type="radio" name="user_gender" value="Female" required="">
+								Female
+							</label>
+						</div>
+
+						<div class="clearfix"> </div>
+					</div>
+					
+					<div class="sign-u">
+						<input type="text" placeholder="Mobile Number" name = "user_mobile" required="">
+						<div class="clearfix"> </div>
+					</div>
+
+					<div class="sign-u">
+						<textarea class="form-control" rows="6" placeholder="User Address" name = "user_address" required=""></textarea>
+						<div class="clearfix"> </div>
+					</div>
+
+					<div class="sub_home">
+							<input type="submit" value="Submit">
+						<div class="clearfix"> </div>
+					</div>
+
+					<div class="registration">
+						Already Registered.
+						<a class="" href="{% url 'login' %}">
+							Login
+						</a>
+					</div>
+					
+				</form>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		{% include 'footer.html' %}
+        <!--//footer-->
+	</div>
+	

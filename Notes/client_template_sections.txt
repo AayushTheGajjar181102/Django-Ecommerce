@@ -1,0 +1,43 @@
+{% load static %}
+
+<!-- Styles -->
+    {% include 'user_panel/styles.html' %}
+
+<!-- Start header section -->
+    {% include 'user_panel/header.html' %}
+<!-- / header section -->
+
+<!-- menu -->
+    <!-- Navbar -->
+        {% include 'user_panel/navbar.html' %}
+    <!--/.nav-collapse -->
+<!-- / menu --> 
+
+<!-- Chatbot section -->
+  {% include 'user_panel/chatbot/chatbot.html' %}
+<!-- / Chatbot section -->
+
+<!-- Support section -->
+  {% include 'user_panel/support.html' %}
+<!-- / Support section -->
+  
+<!-- Client Brand -->
+  {% include 'user_panel/client_brand.html' %}
+<!-- / Client Brand -->
+
+<!-- Subscribe section -->
+  {% include 'user_panel/subscribe.html' %}
+<!-- / Subscribe section -->
+
+<!-- footer -->  
+    {% include 'user_panel/footer.html' %}
+<!-- / footer -->
+
+<!-- Login Modal -->  
+  {% include 'user_panel/login_modal.html' %}
+<!-- / Login Modal -->
+
+<!-- Scripts -->
+    {% include 'user_panel/scripts.html' %}
+ 
+{% url 'home' %}
